@@ -1,0 +1,233 @@
+@media print {
+	.tm-sidebar,
+	.tm-team-img,
+	#about,
+	div:empty,
+	.boxes,
+	#contact,
+	.carousel-indicators,
+	.img-contact-us {
+		display: none;
+	}
+	#home {
+		margin-top: -125px
+	}
+	.padding-medium,
+	.flex-item {
+		max-width: 100%;
+		text-align: center;
+	}
+	h2 {
+		text-transform: uppercase;
+		color: lightskyblue;
+	}
+	.heading {
+		margin-top: -75px
+	}
+	li:nth-child(odd) {
+		text-align: right;
+		margin-right: 160px;
+	}
+	li:nth-child(even) {
+		text-align: left;
+		margin-left: 100px;
+	}
+	li {
+		list-style-type: none;
+	}
+	.blocks {
+		margin-top: -50px;
+	}
+	.blocks p:last-child {
+		letter-spacing: 5px;
+		word-spacing: 10px;
+		font-style: italic;
+		padding: 0;
+		margin: 0;
+	}
+	.tm-team-description-container {
+		padding: 0;
+		margin: 0;
+	}
+	.flex-2-col {
+		margin-top: -25px;
+	}
+	.carousel-inner {
+		margin-top: -57px;
+		margin-bottom: -80px;
+	}
+	.carousel-description {
+		margin: 0;
+		padding: 0;
+	}
+	footer {
+		margin: 0;
+		padding: 0;
+	}
+	section.tm-content-box {
+		margin-bottom: -30px;
+	}
+}
+
+@media screen {
+	.tm-main-nav a:hover {
+		background-color: lightskyblue;
+		color: #fff;
+	}
+	.tm-banner {
+		background: linear-gradient(45deg, lightskyblue, burlywood);
+	}
+	.tm-banner-inner {
+		background: white;
+	}
+	@keyframes animation {
+		from {
+			left: 200px;
+		}
+		to {
+			left: 0px;
+		}
+	}
+	.tm-banner-text {
+		text-shadow: 3px 3px 3px #333;
+		position: relative;
+		animation-name: animation;
+		animation-duration: 4s;
+	}
+	.flex-2-col {
+		display: flex;
+	}
+	.tm-team-description-container {
+		text-align: center;
+	}
+	#about h2:hover {
+		background: lightgrey;
+		font-style: italic;
+	}
+	.heading h2 {
+		text-align: center;
+		color: lightskyblue;
+	}
+	.heading ol {
+		list-style-type: lower-alpha;
+	}
+	.heading ol li:hover::before {
+		content: ">";
+	}
+	.text::after {
+		content: "New";
+		font-size: 11px;
+		vertical-align: top;
+		color: red;
+		text-decoration: none;
+		display: inline-block;
+		font-weight: bold;
+		font-style: normal;
+	}
+	.blocks .tm-team-description-container p:nth-child(3) {
+		letter-spacing: 5px;
+		word-spacing: 10px;
+		font-style: italic;
+	}
+	.blocks .tm-team-description-container {
+		text-align: left;
+	}
+	.blocks .tm-team-description-container p:before {
+		content: "xxx";
+		color: #f5f5f5;
+	}
+	.blocks {
+		border: 20px solid lightskyblue;
+		border-color: transparent;
+		position: relative;
+	}
+	.blocks::before,
+	.blocks::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-color: transparent;
+		border-style: solid;
+	}
+	.blocks::before {
+		border-width: 1.5em;
+		border-left-color: lightskyblue;
+		border-top-color: lightskyblue;
+	}
+	.blocks .tm-content-box .box:nth-child(odd) {
+		background: lightskyblue;
+		padding: 5px;
+		font-style: italic;
+	}
+	.blocks .tm-content-box .box:nth-child(odd) p:first-letter {
+		font-weight: bold;
+		color: white;
+	}
+	.blocks .tm-content-box .box:nth-child(even) p:first-letter {
+		font-weight: bold;
+	}
+	.blocks .tm-content-box .box {
+		font-style: italic;
+	}
+	.tm-section-description p {
+		text-indent: 25px;
+		line-height: 30px;
+	}
+	.blocks .tm-content-box .box h2 {
+		font-style: normal;
+	}
+	#ideas {
+		border: 20px solid lightskyblue;
+		border-color: transparent;
+		position: relative;
+	}
+	#ideas::before,
+	#ideas::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-color: transparent;
+		border-style: solid;
+	}
+	#ideas::before {
+		border-width: 1.5em;
+		border-left-color: lightskyblue;
+		border-top-color: lightskyblue;
+	}
+	.form-control:focus {
+		background: lightskyblue;
+	}
+	.form-control {
+		border-top: 0px;
+		border-right: 0px;
+		border-left: 0px;
+		border-color: lightskyblue;
+	}
+	#contact_message:focus {
+		background: none;
+	}
+	#contact_message {
+		border: 1px solid lightskyblue;
+		background-image: url("../img/email-icon.png");
+		background-position-x: calc(100% - 15px);
+		background-position-y: calc(100% - 15px);
+		background-size: 30px auto;
+		background-repeat: no-repeat;
+	}
+	.btn {
+		float: right;
+		background: white;
+		border: 1px solid lightskyblue;
+		color: lightskyblue;
+		padding-right: 1em;
+		padding-left: 1em;
+		padding-bottom: 0.5em;
+		padding-top: 0.5em;
+	}
+	.tm-main-nav,
+	.tm-content-box {
+		box-shadow: -1px -1px 10px 1px rgba(61, 55, 61, 0.7);
+	}
+}
