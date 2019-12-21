@@ -1,0 +1,327 @@
+body {
+  font-family: roboto;
+  padding: 0;
+  background-color: #0b192f;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #024161;
+  height: 12vh;
+  align-items: center;
+  width: 100%;
+}
+
+header p {
+  color: white;
+  font-size: 40px;
+  margin-left: 2%;
+  font-weight: 100;
+}
+
+header span {
+  color: #D12767;
+}
+
+nav {
+  margin-right: 10%;
+  display: flex;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li:hover {
+  background-color: #1f52a4;
+}
+
+li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: 0 3%;
+  }
+  header nav {
+    display: none;
+  }
+  header {
+    height: 225px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .hamburger {
+    display: block;
+    font-size: 40px;
+    color: white;
+    margin-top: 20%;
+  }
+  header p {
+    margin-bottom: 0;
+    margin-bottom: 10%;
+  }
+  span {
+    color: #8C2AA7;
+  }
+}
+
+.post0 {
+  margin: 2vh 0;
+  height: 510px;
+}
+
+.post0 div {
+  position: relative;
+  bottom: 35vh;
+  left: 5vw;
+  width: 60%;
+  color: white;
+  font-size: 2vh;
+  height: 50%;
+}
+
+.post0 p {
+  color: #9EACAF;
+}
+
+.post0 h2 {
+  font-weight: 100;
+  font-size: 7vh;
+}
+
+@media (max-width: 768px) {
+  .post0 div {
+    bottom: 25vh;
+    width: 90%;
+    font-size: 1.9vw;
+  }
+  .post0 div h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 470px;
+    flex-direction: column;
+  }
+  .post0 {
+    max-height: 470px;
+  }
+}
+
+.main-container {
+  margin-top: 2vh;
+  display: flex;
+}
+
+.main-posts {
+  max-width: 1040px;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+}
+
+.post-img {
+  max-width: 50%;
+}
+
+.post-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.post1-description {
+  background: #9d27b0;
+}
+
+.post-description h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 3.2rem;
+  margin-left: 10%;
+}
+
+.post-description p {
+  margin: 0 10%;
+  width: 80%;
+  color: #9EACAF;
+  font-size: 1.1rem;
+}
+
+.post1-description .date {
+  position: absolute;
+  top: 650px;
+  left: 975px;
+}
+
+.post1-description .date .day {
+  font-size: 3rem;
+  color: #AE4DBE;
+}
+
+.post1-description .date .month {
+  font-size: 2rem;
+  color: #AE4DBE;
+}
+
+.post:hover {
+  opacity: 70%;
+}
+
+.post:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.post2-description {
+  background: #9BB800;
+}
+
+.post2-description .date .day {
+  font-size: 3rem;
+  color: #ADC52D;
+}
+
+.post2-description .date .month {
+  font-size: 2rem;
+  color: #ADC52D;
+}
+
+.post2-description .date {
+  position: absolute;
+  top: 1000px;
+}
+
+.post3-description {
+  background: #ED5120;
+}
+
+.post3-description .date .day {
+  font-size: 3rem;
+  color: #EF673C;
+}
+
+.post3-description .date .month {
+  font-size: 2rem;
+  color: #EF673C;
+}
+
+.post3-description .date {
+  position: absolute;
+  top: 1300px;
+  left: 975px;
+}
+
+.post4-description {
+  background: #9d27b0;
+}
+
+.post4-description .date .day {
+  font-size: 3rem;
+  color: #AE4DBE;
+}
+
+.post4-description .date .month {
+  font-size: 2rem;
+  color: #AE4DBE;
+}
+
+.post4-description .date {
+  position: absolute;
+  top: 1650px;
+}
+
+.no-img-post-description {
+  background: #2D95BB;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.no-img-post-description .date .day {
+  font-size: 3rem;
+  color: #55A9C8;
+}
+
+.no-img-post-description .date .month {
+  font-size: 2rem;
+  color: #55A9C8;
+}
+
+.no-img-post-description .date {
+  position: absolute;
+  top: 2075px;
+  left: 975px;
+}
+
+.no-img-post-description:hover {
+  opacity: 70%;
+}
+
+.no-img-post {
+  margin-bottom: 30px;
+}
+
+.news {
+  width: 25%;
+  margin-left: 2%;
+}
+
+.news-description {
+  width: 84%;
+  margin: auto;
+  padding-bottom: 10%;
+}
+
+.news-post {
+  background: white;
+  margin-bottom: 5%;
+}
+
+.news-description h2 {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: #024161;
+  color: #315B6B;
+}
+
+footer div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
